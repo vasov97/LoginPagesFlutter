@@ -44,7 +44,7 @@ class _LoginPageState extends State<LoginPage>
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const SizedBox(height: 30),
+           const SizedBox(height: 110,),
             ClipRRect(
               borderRadius: const BorderRadius.all(
                 Radius.circular(20),
@@ -110,7 +110,7 @@ class _LoginPageState extends State<LoginPage>
                 ],
               ),
             ),
-            const SizedBox(height: 30),
+            const SizedBox(height: 20),
             Row(
               children: const [
                 Expanded(
@@ -145,15 +145,30 @@ class _LoginPageState extends State<LoginPage>
                 ),
               ],
             ),
-            const SizedBox(height: 40),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: const [
-                LoginOption(name: facebook),
-                LoginOption(name: google),
-                LoginOption(name: apple),
-                
-              ],
+            const SizedBox(height: 20),
+            Padding(
+              padding: const EdgeInsets.all(10.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: const [
+                  LoginOption(name: facebook),
+                  LoginOption(name: google),
+                  LoginOption(name: apple),
+                ],
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(
+                horizontal: 55,
+                vertical: 10,
+              ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: const [
+                  LoginOption(name: phone),
+                  LoginOption(name: github),
+                ],
+              ),
             )
           ],
         ),
