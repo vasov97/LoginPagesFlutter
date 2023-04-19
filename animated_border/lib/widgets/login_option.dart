@@ -12,7 +12,7 @@ class LoginOption extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(10),
       decoration: BoxDecoration(
-          color: lightDarkBlue,
+          color: lightDark,
           borderRadius: const BorderRadius.all(
             Radius.circular(10),
           ),

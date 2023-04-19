@@ -4,6 +4,7 @@ import 'dart:math';
 import '../res/colors.dart';
 import '../res/icons.dart';
 import '../res/style.dart';
+import '../widgets/divider_row.dart';
 import '../widgets/login_form.dart';
 import '../widgets/login_option.dart';
 import '../widgets/neon_background.dart';
@@ -39,7 +40,7 @@ class _LoginPageState extends State<LoginPage>
   Widget build(BuildContext context) {
     return Scaffold(
       resizeToAvoidBottomInset: false,
-      backgroundColor: darkBlue,
+      backgroundColor: dark,
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -56,7 +57,7 @@ class _LoginPageState extends State<LoginPage>
                     width: width,
                     height: height,
                     decoration: BoxDecoration(
-                      color: darkBlue,
+                      color: dark,
                       boxShadow: [
                         blackShadow,
                       ],
@@ -72,7 +73,7 @@ class _LoginPageState extends State<LoginPage>
                       animation: _animation,
                       colors: const [
                         Colors.transparent,
-                        neonblue,
+                        white,
                       ],
                     ),
                   ),
@@ -85,7 +86,7 @@ class _LoginPageState extends State<LoginPage>
                       alignment: Alignment.bottomRight,
                       animation: _animation,
                       colors: const [
-                        neonblue,
+                        white,
                         Colors.transparent,
                       ],
                     ),
@@ -99,7 +100,7 @@ class _LoginPageState extends State<LoginPage>
                       width: width - 10,
                       height: height - 10,
                       decoration: const BoxDecoration(
-                        color: lightDarkBlue,
+                        color: lightDark,
                         borderRadius: BorderRadius.all(
                           Radius.circular(20),
                         ),
@@ -111,40 +112,7 @@ class _LoginPageState extends State<LoginPage>
               ),
             ),
             const SizedBox(height: 20),
-            Row(
-              children: const [
-                Expanded(
-                  child: Padding(
-                    padding: EdgeInsets.all(8.0),
-                    child: Divider(
-                      thickness: 1.3,
-                      color: inputColor,
-                    ),
-                  ),
-                ),
-                Padding(
-                  padding: EdgeInsets.symmetric(
-                    horizontal: 10.0,
-                  ),
-                  child: Text(
-                    'Or Login with',
-                    style: TextStyle(
-                      fontSize: 18,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                ),
-                Expanded(
-                  child: Padding(
-                    padding: EdgeInsets.all(8.0),
-                    child: Divider(
-                      thickness: 1.3,
-                      color: inputColor,
-                    ),
-                  ),
-                ),
-              ],
-            ),
+            const DividerRow(),
             const SizedBox(height: 20),
             Padding(
               padding: const EdgeInsets.all(10.0),
@@ -176,3 +144,5 @@ class _LoginPageState extends State<LoginPage>
     );
   }
 }
+
+

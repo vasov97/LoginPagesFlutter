@@ -13,7 +13,7 @@ class LoginForm extends StatelessWidget {
         const Text(
           'Login',
           style: TextStyle(
-            color: neonblue,
+            color: white,
             fontSize: 30,
             fontWeight: FontWeight.w500,
             letterSpacing: 1,
@@ -27,7 +27,7 @@ class LoginForm extends StatelessWidget {
           child: Text(
             'Forgot Password',
             style: TextStyle(
-              color: neonblue,
+              color: white,
               fontSize: 17,
               fontWeight: FontWeight.w500,
               letterSpacing: 1,
@@ -38,14 +38,14 @@ class LoginForm extends StatelessWidget {
         const SizedBox(height: 20),
         ElevatedButton(
             style: ElevatedButton.styleFrom(
-              backgroundColor: neonblue,
+              backgroundColor: white,
               padding: const EdgeInsets.symmetric(horizontal: 30,vertical: 10),
             ),
             onPressed: () {},
             child: const Text(
               'Login',
               style: TextStyle(
-                color: darkBlue,
+                color: dark,
                 fontSize: 22,
                 fontWeight: FontWeight.w500,
                 letterSpacing: 1,

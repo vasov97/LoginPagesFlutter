@@ -35,7 +35,7 @@ class _CustomInputFieldState extends State<CustomInputField> {
           Text(
             widget.label,
             style: const TextStyle(
-              color: neonblue,
+              color: white,
               fontSize: 16,
               fontWeight: FontWeight.w500,
               letterSpacing: 1,
@@ -46,12 +46,12 @@ class _CustomInputFieldState extends State<CustomInputField> {
             child: TextField(
               obscureText: !_isPasswordVisible,
               style: const TextStyle(
-                color: darkBlue,
+                color: dark,
                 fontSize: 19,
                 fontWeight: FontWeight.w500,
                 letterSpacing: 1,
               ),
-              cursorColor: darkBlue,
+              cursorColor: dark,
               decoration: InputDecoration(
                 contentPadding: const EdgeInsets.symmetric(horizontal: 10),
                 filled: true,
